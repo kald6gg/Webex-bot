@@ -49,7 +49,7 @@ def webhook():
 🏷️ الفئة: {vehicle['category']}
 🎨 اللون: {vehicle['color']}
 🚙 نوع المركبة: {vehicle['vehicle_type']}
-🅿️ موقع الوقوف: {vehicle['parking']}
+موقع الوقوف 🅿️: {vehicle['parking']}
 📅 من: {vehicle['from_date']}
 📅 إلى: {vehicle['to_date']}
 📌 الإجراءات: {vehicle['action']}
