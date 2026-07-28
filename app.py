@@ -1,8 +1,12 @@
 from flask import Flask, request
 from webexteamssdk import WebexTeamsAPI
 import requests
+import os
 
-BOT_TOKEN = "test"
+BOT_TOKEN = os.environ.get("WEBEX_BOT_TOKEN")
+
+if not BOT_TOKEN:
+    raise RuntimeError("WEBEX_BOT_TOKEN is missing")
 
 api = WebexTeamsAPI(access_token=BOT_TOKEN)
 
